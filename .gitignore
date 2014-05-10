@@ -1,12 +1,67 @@
+# IDE-specific files #
+######################
+.externalToolBuilders
+.idea
+nb-configuration.xml
+*.orig
+.springBeans
+*.iml
+*.ipr
+*.iws
+*.ids
+*.swp
+.pmd
+.checkstyle
+maven-eclipse.xml
+
+# Compiled sources #
+######################
+*.com
 *.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Packages #
+######################
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
 *.jar
-*.war
-*.ear
+*.rar
+*.tar
+*.zip
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Logs #
+######################
+*.log
+*.log.zip
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Folders #
+######################
+target
+build
+log
+lib
+
+# Other #
+######################
+.classpath
+.project
+.settings
+.metadata
+.gradle
+HREV*
+*.FDC

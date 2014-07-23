@@ -39,8 +39,8 @@
                                     <mainClass>by.experiments.agent.Patcher</mainClass>
                                 </manifest>
                                 <manifestEntries>
-                                    <Premain-Class>by.experiments.agent.CalculatorPatchAgent</Premain-Class>
-                                    <Agent-Class>by.experiments.agent.CalculatorPatchAgent</Agent-Class>
+                                    <Premain-Class>by.experiments.agent.ClassRedefineAgent</Premain-Class>
+                                    <Agent-Class>by.experiments.agent.ClassRedefineAgent</Agent-Class>
                                     <Can-Redefine-Classes>true</Can-Redefine-Classes>
                                     <Can-Retransform-Classes>true</Can-Retransform-Classes>
                                 </manifestEntries>

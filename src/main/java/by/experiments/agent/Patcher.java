@@ -1,5 +1,6 @@
 package by.experiments.agent;
 
+import by.experiments.agent.util.AgentUtils;
 import com.sun.tools.attach.AgentInitializationException;
 import com.sun.tools.attach.AgentLoadException;
 import com.sun.tools.attach.AttachNotSupportedException;
@@ -35,7 +36,7 @@ public class Patcher
         if (pid != null)
         {
             VirtualMachine vm = VirtualMachine.attach(pid);
-            vm.loadAgent(jarFilePath);
+            vm.loadAgent(jarFilePath, AgentUtils.buildArgumentsString("example.Calculator", "Calculator.class.fixed"));
             vm.detach();
         }
     }
